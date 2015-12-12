@@ -1,6 +1,6 @@
 # Maintainer: Your Name <youremail@domain.com>
 pkgname=potato
-pkgver=1
+pkgver=3
 pkgrel=1
 pkgdesc="A pomodoro timer for the shell"
 arch=('any')
