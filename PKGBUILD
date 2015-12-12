@@ -13,7 +13,7 @@ install=
 changelog=
 source=(potato.sh LICENSE)
 noextract=()
-md5sums=('1063efc13fac99d64bac8ac97e6cf919'
+md5sums=('e6bfd8b6eb2717bace7a865898a93c07'
          '1ddcbd2862764b43d75fb1e484bf8912')
 
 package() {
