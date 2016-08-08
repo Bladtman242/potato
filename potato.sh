@@ -3,7 +3,6 @@
 WORK=25
 PAUSE=5
 INTERACTIVE=true
-CLEARLINE="\r"
 MUTE=false
 
 show_help() {
@@ -24,7 +23,6 @@ while getopts :sw:b:m opt; do
 	case "$opt" in
 	s)
 		INTERACTIVE=false
-		CLEARLINE=""
 	;;
 	m)
 		MUTE=true
