@@ -8,8 +8,8 @@ url="https://github.com/Bladtman242/potato"
 license=('MIT')
 depends=('alsa-utils')
 source=('potato.sh'
-		'LICENSE')
-md5sums=('e6bfd8b6eb2717bace7a865898a93c07'
+        'LICENSE')
+md5sums=('a39b72e01fccb4a3225a14f3216d9619'
          '1ddcbd2862764b43d75fb1e484bf8912')
 
 package() {
