@@ -8,7 +8,7 @@ MUTE=false
 
 show_help() {
 	cat <<-END
-		usage: potato [-i] [-m] [-w m] [-b m] [-h]
+		usage: potato [-s] [-m] [-w m] [-b m] [-h]
 		    -s: simple output. Intended for use in scripts
 		        When enabled, potato outputs one line for each minute, and doesn't print the bell character
 		        (ascii 007)
