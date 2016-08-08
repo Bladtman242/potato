@@ -42,11 +42,11 @@ while getopts :sw:b:m opt; do
 	esac
 done
 
-time_left="%im left of %s"
+time_left="%im left of %s "
 
 if $INTERACTIVE; then
 	time_left="\r$time_left"
-else 
+else
 	time_left="$time_left\n"
 fi
 
