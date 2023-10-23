@@ -59,7 +59,7 @@ do
 	do
 		printf "$time_left" $i "work"
 		sleep 1m
-		true $(( i--))
+		true $(( i=i-1 ))
 	done
 
 	! $MUTE && play_notification
@@ -74,7 +74,7 @@ do
 	do
 		printf "$time_left" $i "pause"
 		sleep 1m
-		true $(( i-- ))
+		true $(( i=i-1 ))
 	done
 
 	! $MUTE && play_notification
