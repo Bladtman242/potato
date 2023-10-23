@@ -65,7 +65,7 @@ do
 	! $MUTE && play_notification
 	if $INTERACTIVE; then
 		read -d '' -t 0.001
-		printf "\aWork over\n"
+		printf "\a\nWork over\n"
 		read
 	fi
 	
@@ -80,7 +80,7 @@ do
 	! $MUTE && play_notification
 	if $INTERACTIVE; then
 		read -d '' -t 0.001
-		printf "\aPause over\n"
+		printf "\a\nPause over\n"
 		read
 	fi
 done
