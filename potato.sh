@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 WORK=25
 PAUSE=5
@@ -54,31 +54,33 @@ fi
 
 while true
 do
-	for ((i=$WORK; i>0; i--))
+	i=$WORK
+	while [ $i -gt 0 ]
 	do
 		printf "$time_left" $i "work"
 		sleep 1m
+		true $(( i=i-1 ))
 	done
 
 	! $MUTE && play_notification
 	if $INTERACTIVE; then
 		read -d '' -t 0.001
-		echo -e "\a"
-		echo "Work over"
+		printf "\a\nWork over\n"
 		read
 	fi
-
-	for ((i=$PAUSE; i>0; i--))
+	
+	i=$PAUSE
+	while [ $i -gt 0 ]
 	do
 		printf "$time_left" $i "pause"
 		sleep 1m
+		true $(( i=i-1 ))
 	done
 
 	! $MUTE && play_notification
 	if $INTERACTIVE; then
 		read -d '' -t 0.001
-		echo -e "\a"
-		echo "Pause over"
+		printf "\a\nPause over\n"
 		read
 	fi
 done
